@@ -1,0 +1,81 @@
+@font-face {
+    font-family: big-shoulders-display;
+    src: url('fonts/BigShouldersDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: lexend-deca;
+    src: url('fonts/LexendDeca-VariableFont_wght.ttf');
+}
+:root {
+    --main-bright-orange: hsl(31, 77%, 52%);
+    --main-dark-cyan: hsl(184, 100%, 22%);
+    --main-very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+}
+
+h2 {
+    font-family: big-shoulders-display, serif;
+    font-weight: 700;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+p, button {
+    font-family: lexend-deca, serif;
+    font-weight: 400;
+}
+
+button {
+    background-color: white;
+    border: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    max-height: 550px;
+}
+
+.card-orange {
+    background-color: var(--main-bright-orange);
+    & button {
+        color: var(--main-bright-orange);
+    }
+}
+
+.card-dark-cyan {
+    background-color: var(--main-dark-cyan);
+    & button {
+        color: var(--main-dark-cyan);
+    }
+}
+
+.card-very-dark-cyan {
+    background-color: var(--main-very-dark-cyan);
+    & button {
+        color: var(--main-very-dark-cyan);
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    body {
+        flex-direction: column;
+    }
+}
