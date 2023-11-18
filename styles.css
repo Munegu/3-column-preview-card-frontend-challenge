@@ -107,4 +107,39 @@ img {
     body {
         flex-direction: column;
     }
+
+    .card {
+        padding: 24px;
+        height: 400px;
+        width: 260px;
+    }
+
+    h2 {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    
+    p {
+        margin-bottom: 24px;
+        margin-right: 24px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        line-height: 1.6;
+    }
+    
+    button {
+        height: 20px;
+        width: 152px;
+        padding: 24px;
+    }
+
+    .card-orange {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    .card-very-dark-cyan {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
 }
